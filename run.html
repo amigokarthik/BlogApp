@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Commutatus Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    background-color: green;
+	color:white;
+}
+</style>
+  </head>
+<body>
+<div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12">
+  <center><h1>Commutatus Registration</h1></center>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-2">
+</div>
+ <div class="col-sm-4">
+ <form ng-submit="createMeetupl()">
+<h2>LogIn &#9786;</h2>
+          <input type="text" style="color:black;"  placeholder="Username" ng-model="userNamel"></input>
+		  <br/><br/>
+          <input type="password" style="color:black;"  placeholder="Password" ng-model="passWordl"></input>
+		  <br/><br/>
+          <button style="background-color:black;color:white;" type="submit" >Login</button>
+        </form> 
+</div>
+<div class="col-sm-4">
+<form ng-submit="createMeetup()">
+<h2>SignUp!</h2>
+          <input type="text" style="color:black;"  placeholder="Username" ng-model="userName"></input>
+		  <br/><br/>
+          <input type="password" style="color:black;"  placeholder="Password" ng-model="passWord"></input>
+		  <br/><br/>
+          <button type="submit" style="background-color:black;color:white;" >SignUp</button>
+        </form> 		
+<h3>{{note}}</h3>
+		</div>
+<div class="col-sm-2">
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <center><h3>If new user please register else login</h3></center>
+</div>	
+</div>
+</div>
+</body>
+</html>
+
+     

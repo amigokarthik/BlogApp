@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Commutatus Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  a:hover {
+ cursor:pointer;
+}
+</style>
+  </head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<ul class="nav nav-pills" style="border-style: solid;">
+    <li><a href="./#/home">Home</a></li>
+    <li><a href="./#/settings">Settings</a></li>
+    <li><a ng-click="logout()" >Logout</a></li>
+  </ul>
+  </div>
+  </div>
+  <hr/>
+  <br/>
+  <div class="row">
+<div class="col-sm-2"></div>
+<div class="col-sm-4" style="border-style: solid;">
+<br/>
+<img class="img-responsive" ng-src="{{data}}">
+<br/>
+<button type="file" ngf-select="uploadFiles($file, $invalidFiles)"
+        accept="image/*" ngf-max-height="1000" ngf-max-size="1MB">
+    Update Profile Pic</button>
+	<br/><br/>
+	<p style="color:green;">{{myImg}}</p>
+
+	
+	</div>
+	<div class="col-sm-4"></div>
+	<div class="col-sm-2"></div>
+</div>
+</div>
+  </body>
+  </html>

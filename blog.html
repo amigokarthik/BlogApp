@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Commutatus Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+    background-color: blue;
+	color:white;
+}
+</style>
+  </head>
+<body>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12">
+  <center><h1>Welcome to Commutatus Challenge Blog</h1></center>
+</div>
+</div>
+</br>
+<br/>
+<div class="row">
+<div class="col-sm-6">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="search blogs" ng-model="searchBox"></div>
+<br/>
+<h3>Blog Posts:</h3><br/>
+<div ng-repeat="x in datap | filter:searchBox">
+<div class="form-group">
+<h4>Added by : {{x.user_added}}</h4>
+<br/>
+<textarea style="background-color: white;" class="form-control" readonly rows="3">{{x.posts}}</textarea>
+		</div>
+		<br/><br/>
+</div>
+</div>
+<div class="col-sm-6">
+<h4>Please SignUp/Login to add your blogs</h4><br/>
+<center><a href="#log" ng-click="set()"><input style="background-color:black;color:white;" type="button" value="SignUp/Login"/></a></center>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Commutatus Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+a:hover {
+ cursor:pointer;
+}
+</style>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<ul class="nav nav-pills" style="border-style: solid;">
+    <li><a href="./#/home">Home</a></li>
+    <li><a href="./#/settings">Settings</a></li>
+    <li><a ng-click="logout()" >Logout</a></li>
+  </ul>
+  </div>
+  </div>
+  <hr/>
+  <br/>
+<div class="row">
+  <div class="col-sm-2">
+<img class="img-responsive"   ng-src="{{data}}">
+    <h2>{{dataun}}</h2>
+</div>
+<div class="col-sm-1">
+<br/>
+</div>
+ <div class="col-sm-8">
+ <div class="form-group">
+ <form>
+ 
+          <input type="textfield" class="form-control"   placeholder="write post" ng-model="posts"></input>
+		  <br/><br/>
+          <center><button type="submit" ng-click="postfunction()">Post</button></center>
+        </form> 
+		</div>
+
+<h3>Users Blog Posts:</h3>
+<div class="form-group" ng-repeat="x in datap track by $index">
+<div style="border-style: solid;">
+<p> Posted by : {{x.user_added}}</p>
+<p ng-model="imp">{{x.posts}}</p>
+</div>
+</div>		
+</div>
+<div class="col-sm-3">
+</div>
+</div>
+</div>	
+</div>
+</body>
+</html>
+
+     
